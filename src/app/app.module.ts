@@ -9,14 +9,17 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
 import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { RouterModule, Routes } from '@angular/router';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SearchNavBarComponent } from './components/search-nav-bar/search-nav-bar.component'
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     SideBarComponent,
-    NavBarComponent
+    NavBarComponent,
+    SearchNavBarComponent
   ],
   imports: [
     BrowserModule,
