@@ -1,0 +1,17 @@
+.navbar-brand{
+  font-size: 13px;
+  margin-left: 1rem;
+}
+.left-elements{
+  margin-left: 9rem;
+}
+.right-elements{
+  margin-right: 9rem;
+}
+a:hover {
+  color: #6565ea !important;
+}
+select:hover {
+  color: #6565ea !important;
+}
+

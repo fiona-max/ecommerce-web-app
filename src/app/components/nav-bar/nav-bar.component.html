@@ -1,0 +1,29 @@
+<nav class="navbar navbar-light bg-light ">
+  <div class="container-fluid">
+    <span class="d-flex me-auto left-elements">
+      <a class="navbar-brand" href="#">{{'about_us' | translate}}</a>
+    <a class="navbar-brand" href="#">{{'my_account' | translate}}</a>
+    <a class="navbar-brand" href="#">{{'featured_products' | translate}}</a>
+    <a class="navbar-brand" href="#">{{'wishlist' | translate}}</a>
+    </span>
+    <span class="d-flex ms-auto right-elements">
+      <a class="navbar-brand" href="#">{{'order_tracking' | translate}}</a>
+    <select class="form-select border-0 navbar-brand bg-light" aria-label="Default select example"
+            (change)="getLanguage($event)">
+    <option value="1" selected>{{'English' | translate}}</option>
+    <option value="2" >{{'French' | translate}}</option>
+    </select>
+    <select class="form-select border-0 navbar-brand bg-light" aria-label="Default select example"
+            (change)="getCurrency($event)">
+    <option value="1" selected>{{'USD' | translate}}</option>
+    <option value="2" >{{'FCFA' | translate}}</option>
+    </select>
+    </span>
+  </div>
+</nav>
+
+
+
+
+
+
