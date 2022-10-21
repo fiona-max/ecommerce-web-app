@@ -1,0 +1,14 @@
+.right-elements{
+  margin-right: 8.8rem;
+}
+
+.nav-link{
+  margin-left: 0.71rem;
+}
+hr{
+  margin: 0;
+}
+.container-sm {
+  grid-template-columns: 16px 7.4rem 16px;
+  text-align: center;
+}

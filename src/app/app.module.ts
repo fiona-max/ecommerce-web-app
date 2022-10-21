@@ -10,7 +10,8 @@ import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { SearchNavBarComponent } from './components/search-nav-bar/search-nav-bar.component'
+import { SearchNavBarComponent } from './components/search-nav-bar/search-nav-bar.component';
+import { MenuNavBarComponent } from './components/menu-nav-bar/menu-nav-bar.component'
 
 
 
@@ -19,7 +20,8 @@ import { SearchNavBarComponent } from './components/search-nav-bar/search-nav-ba
     AppComponent,
     SideBarComponent,
     NavBarComponent,
-    SearchNavBarComponent
+    SearchNavBarComponent,
+    MenuNavBarComponent
   ],
   imports: [
     BrowserModule,
