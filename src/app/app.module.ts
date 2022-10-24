@@ -11,7 +11,8 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SearchNavBarComponent } from './components/search-nav-bar/search-nav-bar.component';
-import { MenuNavBarComponent } from './components/menu-nav-bar/menu-nav-bar.component'
+import { MenuNavBarComponent } from './components/menu-nav-bar/menu-nav-bar.component';
+import { CarouselSectionComponent } from './pages/carousel-section/carousel-section.component'
 
 
 
@@ -21,7 +22,8 @@ import { MenuNavBarComponent } from './components/menu-nav-bar/menu-nav-bar.comp
     SideBarComponent,
     NavBarComponent,
     SearchNavBarComponent,
-    MenuNavBarComponent
+    MenuNavBarComponent,
+    CarouselSectionComponent
   ],
   imports: [
     BrowserModule,

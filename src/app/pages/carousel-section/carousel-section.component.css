@@ -1,0 +1,15 @@
+section{
+  overflow-x: hidden;
+}
+/*.carousel{*/
+/*  background-image: url('https://klbtheme.com/machic/wp-content/uploads/2021/09/slider-banner-4d.jpg');*/
+/*  height: 450px;*/
+/*}*/
+.sub-desc{
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto;
+}
+.item1{
+  grid-template-columns: 8rem 12rem;
+  grid-template-rows: auto;
+}

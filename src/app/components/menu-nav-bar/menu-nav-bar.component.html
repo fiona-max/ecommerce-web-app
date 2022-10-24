@@ -3,15 +3,10 @@
     <ul class="nav nav-pills" style="margin-left: 9rem">
 
   <li class="nav-item dropdown">
-<!--    <a class="nav-link dropdown-toggle text-black " aria-current="page"  data-bs-toggle="dropdown" href="#" role="button"-->
-<!--       aria-expanded="false">-->
-<!--       <span-->
-<!--      class="me-5"-->
-<!--    ></span></a>-->
       <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"
       style="background-color: rgba(125,125,125,0.18)">
-    <img src="assets/images/burger-menu.png" class="me-3" alt="no logo" style="width: 1.9rem; height:2rem;"> All
-        Departments
+    <img src="assets/images/burger-menu.png" class="me-3" alt="no logo" style="width: 1.9rem; height:2rem;">
+        {{'All_Departments' | translate}}
   </button>
     <ul class="dropdown-menu">
       <li><a class="dropdown-item" href="#">Action</a></li>
@@ -21,37 +16,33 @@
       <li><a class="dropdown-item" href="#">Separated link</a></li>
     </ul>
   </li>
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Home</a>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
-      <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">Separated link</a></li>
-    </ul>
+  <li class="nav-item ">
+    <a class="nav-link text-black" href="#" role="button" aria-expanded="false">{{'Home' | translate}}</a>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Shop</a>
-    <ul class="dropdown-menu">
+    <div class="dropdown">
+    <a class="nav-link dropdown-toggle text-black dropbtn" data-bs-toggle="dropdown" href="#" role="button"
+       aria-expanded="false">{{'Shop' | translate}}</a>
+    <ul class="dropdown-menu dropdown-content">
       <li><a class="dropdown-item" href="#">Action</a></li>
       <li><a class="dropdown-item" href="#">Another action</a></li>
       <li><a class="dropdown-item" href="#">Something else here</a></li>
       <li><hr class="dropdown-divider"></li>
       <li><a class="dropdown-item" href="#">Separated link</a></li>
     </ul>
+    </div>
   </li>
   <li class="nav-item ">
-    <a class="nav-link text-black" href="#">Cell Phones</a>
+    <a class="nav-link text-black" href="#">{{'Cell_Phones' | translate}}</a>
   </li>
   <li class="nav-item ">
-    <a class="nav-link text-black" href="#">HeadPhones</a>
+    <a class="nav-link text-black" href="#">{{'HeadPhones' | translate}}</a>
   </li>
   <li class="nav-item ">
-    <a class="nav-link text-black" href="#">Blog</a>
+    <a class="nav-link text-black" href="#">{{'Blog' | translate}}</a>
   </li>
   <li class="nav-item ">
-    <a class="nav-link " href="#">Contact</a>
+    <a class="nav-link " href="#">{{'Contact' | translate}}</a>
   </li>
 </ul>
   </span>
@@ -60,7 +51,9 @@
         <img src="assets/images/discount-50.png" class="me-3" alt="no logo" style="width: 1.9rem; height:2rem;">
       </div>
       <div class="space" style="font-size: 10px">
-        <a class="nav-link" href="#">Only this weekend<a class="nav-link" href="#">Super Discount</a></a>
+        <a class="nav-link" href="#">{{"Only_this_weekend" | translate}}<a class="nav-link"
+                                                                          href="#">{{'Super_Discount' |
+          translate}}</a></a>
       </div>
       <div class="space small">
         <img src="assets/images/arrow-d.webp" class="me-auto" alt="no-logo" style="width: 0.8rem; height:0.95rem;">
