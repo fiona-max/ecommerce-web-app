@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {CategoryServiceService} from "../../services/category-service.service";
+import {Categories} from "../../models/categories";
 
 @Component({
   selector: 'app-menu-nav-bar',
@@ -6,10 +8,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu-nav-bar.component.css']
 })
 export class MenuNavBarComponent implements OnInit {
-
-  constructor() { }
+  categories : Categories[] = []
+  constructor(private categoryServiceService: CategoryServiceService) { }
 
   ngOnInit(): void {
+    this.getCategory()
+  }
+  getCategory(){
+    const sub = this.categoryServiceService.getCategories().subscribe( res => {
+      this.categories = res
+      console.log(this.categories)
+    })
   }
 
 }

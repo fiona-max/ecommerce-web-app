@@ -6,14 +6,11 @@
       <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"
       style="background-color: rgba(125,125,125,0.18)">
     <img src="assets/images/burger-menu.png" class="me-3" alt="no logo" style="width: 1.9rem; height:2rem;">
-        {{'All_Departments' | translate}}
+        {{'Categories' | translate}}
   </button>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
-      <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    <ul class="dropdown-menu w-100" >
+      <li><a class="dropdown-item" href="#" *ngFor="let category of categories">{{category.name}}<hr class="dropdown-divider"></a>
+      </li>
     </ul>
   </li>
   <li class="nav-item ">
