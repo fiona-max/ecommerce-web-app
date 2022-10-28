@@ -3,6 +3,7 @@ import {HttpClient} from "@angular/common/http";
 import {environment} from "../../environments/environment";
 import {Observable} from "rxjs";
 import {Categories} from "../models/categories";
+import {Products} from "../models/products";
 
 @Injectable({
   providedIn: 'root'
@@ -14,5 +15,10 @@ baseUrl = environment.baseUrl
     return this.http.get<Categories[]>(
       `${this.baseUrl}`
     );
+  }
+  getProducts(): Observable<Products[]>{
+  return this.http.get<Products[]>(`
+    https://api.escuelajs.co/api/v1/products?offset=0&limit=8
+    `)
   }
 }

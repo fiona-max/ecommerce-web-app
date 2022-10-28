@@ -12,9 +12,16 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SearchNavBarComponent } from './components/search-nav-bar/search-nav-bar.component';
 import { MenuNavBarComponent } from './components/menu-nav-bar/menu-nav-bar.component';
-import { CarouselSectionComponent } from './pages/carousel-section/carousel-section.component'
+import { CarouselSectionComponent } from './pages/carousel-section/carousel-section.component';
+import { ProductSectionComponent } from './pages/product-section/product-section.component';
+import { FooterSectionComponent } from './pages/footer-section/footer-section.component';
+import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './pages/home/home.component'
 
-
+const routes: Routes = [
+  { path: '' , component: HomeComponent}
+]
 
 @NgModule({
   declarations: [
@@ -23,10 +30,15 @@ import { CarouselSectionComponent } from './pages/carousel-section/carousel-sect
     NavBarComponent,
     SearchNavBarComponent,
     MenuNavBarComponent,
-    CarouselSectionComponent
+    CarouselSectionComponent,
+    ProductSectionComponent,
+    FooterSectionComponent,
+    ProductDetailComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
+    RouterModule.forRoot(routes),
     // ngx-translate and the loader module
     HttpClientModule,
     TranslateModule.forRoot({
@@ -36,7 +48,8 @@ import { CarouselSectionComponent } from './pages/carousel-section/carousel-sect
         deps: [HttpClient]
       }
     }),
-    NgbModule
+    NgbModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
