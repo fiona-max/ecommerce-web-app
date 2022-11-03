@@ -1,48 +1,24 @@
 <div class="container">
-  <div class="row align-items-center">
-    <div class="col">
-        <div class="card-body-1 col">
-          <div class="p-5">
-            <small>Maecans non erat</small>
-            <br/>
-            <strong>HeadPhones</strong>
-             <br/>
-            <br/>
-            <br/>
-            <span>Weekend Discount</span>
-            <br/>
-            <span class="text-danger">$399.0</span>
+  <div class="row align-items-center" >
+    <div class="col-4" *ngFor="let category of categories">
+        <div class="card-body-1" style="height: auto" >
+          <div class="p-2 mb-1 mt-2 row img-thumbnail">
+            <div class="col">
+              <img src="{{category.image}}" alt="category image" style=" height: 7.5rem">
+            </div>
+            <div class="col">
+              <p >{{category.name}}</p>
+              <div *ngFor="let product of prodByCategory.get(category.name).slice(0, 3)">
+                <ul class="list-unstyled " style="font-size: 13px; color: grey">
+                  <li>{{ product.title }}</li>
+                </ul>
+              </div>
+              <a class="text-decoration-none" [routerLink]="['/ui/category/'+ category.id +'/products']"><p>View
+                all<img src="assets/images/arrow_right-blue.webp" class="ms-1" alt="category image" style=" height:
+                1.2rem"></p></a>
+            </div>
           </div>
         </div>
-    </div>
-    <div class="col">
-        <div class="card-body-2 col">
-          <div class="p-5">
-            <small>Maecans non erat</small>
-            <br/>
-            <strong>HeadPhones</strong>
-            <br/>
-            <br/>
-            <br/>
-            <span>Weekend Discount</span>
-            <br/>
-            <span class="text-danger">$399.0</span>
-          </div>        </div>
-    </div>
-    <div class="col">
-      <div class="card-body-3 col">
-        <div class="p-5">
-          <small>Maecans non erat</small>
-          <br/>
-          <strong>HeadPhones</strong>
-          <br/>
-          <br/>
-          <br/>
-          <span>Weekend Discount</span>
-          <br/>
-          <span class="text-danger">$399.0</span>
-        </div>
-      </div>
     </div>
   </div>
 </div>
@@ -50,8 +26,8 @@
   <hr/>
   <div class="row pb-4">
     <div class="col-3" *ngFor="let product of all_products">
-      <a>
-        <div class="card p-3 mb-3 border-0" style="height: 20rem">
+      <a [routerLink]="['/ui/product-detail/'+ product.id]" class="text-decoration-none">
+        <div class="card p-3 mb-3 border-0 text-black" style="height: 20rem">
           <div class="card-header row">
             <div class="image display col" *ngFor="let image of product.images">
               <img src="{{image}}" alt="no image" style="width: 100%; height: 4rem">

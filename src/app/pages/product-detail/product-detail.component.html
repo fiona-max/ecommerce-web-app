@@ -1,11 +1,24 @@
-<div class="row card">
-  <div class="col card-body">
-    <img src="assets/images/banner-7.jpg">
-  </div>
-  <div class="col">
-    <p>Title: <span>Title</span></p>
-    <p>Price: <span>Title</span></p>
-    <p>Description: <span>Title</span></p>
-    <p>Category: <span>Title</span></p>
+<app-nav-bar></app-nav-bar>
+<app-search-nav-bar></app-search-nav-bar>
+<app-menu-nav-bar></app-menu-nav-bar>
+<br/>
+<div class="container">
+  <div class="d-flex" style="margin-left: 12rem">
+    <div class="img-thumbnail">
+      <button type="button" class="btn btn-success" style="border-radius: 5rem; margin-top: 0.7rem;margin-left: 0.7rem;
+      width: 7rem">Top
+        Product
+      </button>
+      <img src="{{product?.images}}" style="height: 20rem; padding: 4rem" alt="product image">
+    </div>
+    <div class="" style="margin-left: 7rem">
+      <h2>{{product?.title}}</h2>
+      <h5 class="text-danger">{{product?.price}} </h5>
+      <p>Description: <span>{{product?.description}}</span></p>
+      <p>{{product?.category?.name}}</p>
+    </div>
   </div>
 </div>
+<br/>
+<app-footer-section></app-footer-section>
+

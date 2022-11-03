@@ -17,10 +17,13 @@ import { ProductSectionComponent } from './pages/product-section/product-section
 import { FooterSectionComponent } from './pages/footer-section/footer-section.component';
 import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
 import { AppRoutingModule } from './app-routing.module';
-import { HomeComponent } from './pages/home/home.component'
+import { HomeComponent } from './pages/home/home.component';
+import { ProdByCategoryComponent } from './pages/prod-by-category/prod-by-category.component'
 
 const routes: Routes = [
-  { path: '' , component: HomeComponent}
+  { path: '' , component: HomeComponent},
+  { path: 'ui/product-detail/:productId' , component: ProductDetailComponent},
+  { path: 'ui/category/:categoryId/products' , component: ProdByCategoryComponent}
 ]
 
 @NgModule({
@@ -34,7 +37,8 @@ const routes: Routes = [
     ProductSectionComponent,
     FooterSectionComponent,
     ProductDetailComponent,
-    HomeComponent
+    HomeComponent,
+    ProdByCategoryComponent
   ],
   imports: [
     BrowserModule,

@@ -17,7 +17,6 @@ export class MenuNavBarComponent implements OnInit {
   getCategory(){
     const sub = this.categoryServiceService.getCategories().subscribe( res => {
       this.categories = res
-      console.log(this.categories)
     })
   }
 
